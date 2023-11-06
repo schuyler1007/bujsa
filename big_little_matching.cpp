@@ -79,7 +79,7 @@ COST MinCostFlow(Graph &G, int s, int t, FLOW inif) {
             Edge &re = G.redge(e);
             e.cap -= d;
             re.cap += d;
-        }s
+        }
     }
     return res;
 }
@@ -87,12 +87,12 @@ COST MinCostFlow(Graph &G, int s, int t, FLOW inif) {
 
 int main(){
 
-    string big[] = {}; // bigs name comes here
-    string little[] = {}; // littles name comes here
-    int num_matches[] = {}; // how many littles each big wants comes here
+    string little[] = {"miori","sota","takahiro","darren","youngsun","niki","amina","selina","madoka","chikako","taizo","anna","ryo","mikiya","noe","mimi","saki","ayase","emma","elena","jacqueline","taizo","noelle","monami","jordan","ryunosuke","ichiyo","samantha","amane","emma","hiyo","akari","brian","andre","kiko"}; // littles name comes here
+    string big[] = {"remi","shion","theodore","sora","juliana","christophe","afiq","cydni","yuuki","kiku","brandon","alec","ian","hugo","umi"}; // bigs name comes here
+    int num_matches[] = {4,3,1,2,2,4,3,4,4,3,2,2,4,3,4}; // how many littles each big wants comes here
 
-    int num_big = 0, num_little = 0;
-    cin >> num_big >> num_little;
+    int num_big = 15, num_little = 35;
+    //cin >> num_big >> num_little;
 
     Graph G(num_big + num_little + 2);
 
@@ -103,8 +103,11 @@ int main(){
         for (int j=0; j<num_little; j++){
             int gain;
             cin >> gain;
-            gain = 49 - gain;
-            G.addedge(i, j+num_big, 1, gain);
+            if (gain != 0){
+                gain = 49 - gain;
+                G.addedge(i, j+num_big, 1, gain);
+            }
+            
         }
     }
 
