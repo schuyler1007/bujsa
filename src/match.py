@@ -37,7 +37,7 @@ def extract_data(filename, lorb):
         # if the input is the littles file, append littles objects to file
         if lorb == 'l':
             for row in reader:
-                member_obj.append(Little(row[1], row[3:]))
+                member_obj.append(Little(row[2], row[3:]))
         # if the input is the bigs file, append bigs objects to file 
         if lorb == 'b':
             for row in reader:
@@ -46,7 +46,7 @@ def extract_data(filename, lorb):
 
 
 # Extract data for littles
-littles = extract_data('../misc/littles1AMNoDupe.csv', 'l')[1:]
+littles = extract_data('../misc/spring2024/NoAbroadLittles.csv', 'l')[1:]
 littlesAmt = len(littles)
 # Reformat names of all little objects to be lowercase first name
 for i in littles:
@@ -60,7 +60,7 @@ print("\""+littles[littlesAmt-1].name+"\"}")
 
 
 # Extract data for bigs
-bigs = extract_data('../misc/bigs3.csv','b')[1:]
+bigs = extract_data('../misc/spring2024/NoAbroadBigs.csv','b')[1:]
 bigsAmt = len(bigs)
 # Reformat names of all big objects to be lowercase first name 
 for i in bigs:
