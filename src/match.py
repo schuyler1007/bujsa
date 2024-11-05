@@ -41,12 +41,12 @@ def extract_data(filename, lorb):
         # if the input is the bigs file, append bigs objects to file 
         if lorb == 'b':
             for row in reader:
-                member_obj.append(Big(row[2], row[5:], row[4]))
+                member_obj.append(Big(row[1], row[4:], row[3]))
     return member_obj
 
 
 # Extract data for littles
-littles = extract_data('../misc/littles1AMNoDupe.csv', 'l')[1:]
+littles = extract_data('../misc/Fall2024/Littles.csv', 'l')[1:]
 littlesAmt = len(littles)
 # Reformat names of all little objects to be lowercase first name
 for i in littles:
@@ -60,7 +60,7 @@ print("\""+littles[littlesAmt-1].name+"\"}")
 
 
 # Extract data for bigs
-bigs = extract_data('../misc/bigs3.csv','b')[1:]
+bigs = extract_data('../misc/Fall2024/Bigs.csv','b')[1:]
 bigsAmt = len(bigs)
 # Reformat names of all big objects to be lowercase first name 
 for i in bigs:
@@ -91,14 +91,13 @@ for i in littles:
         newBigsList.append(j.split(" ")[0].lower())
     i.bigs = newBigsList
 
-
 for i in bigs:
     for j in littles:
         if (j.name in i.littles and i.name in j.bigs):
             bigsRank = (i.littles.index(j.name)) 
             littlesRank = (j.bigs.index(i.name))
-            bigsRank = (7 - bigsRank)
-            littlesRank = (7 - littlesRank)
+            bigsRank = (5 - bigsRank)
+            littlesRank = (5 - littlesRank)
             print(bigsRank*littlesRank)
         else:
             print("0")
