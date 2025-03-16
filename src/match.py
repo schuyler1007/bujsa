@@ -41,12 +41,7 @@ littlesAmt = len(littles)
 # Reformat names of all little objects to be lowercase first name
 for i in littles:
     i.name = i.name.split(" ")[0].lower()
-
-
-    
-
-            
-extract_data('../misc/little.csv', 'l')
+# extract_data('../misc/little.csv', 'l')
 
 # Extract data for bigs
 bigs = extract_data('../data/Spring2025/bigs.csv','b')[1:]
@@ -80,6 +75,8 @@ for i in littles:
         newBigsList.append(j.split(" ")[0].lower())
     i.bigs = newBigsList
 
+gains = []
+
 for i in bigs:
     for j in littles:
         if (j.name in i.littles and i.name in j.bigs):
@@ -88,8 +85,11 @@ for i in bigs:
             bigsRank = (7 - bigsRank)
             littlesRank = (7 - littlesRank)
             print(bigsRank*littlesRank)
+            gains.append(bigsRank*littlesRank)
         else:
             print("0")
+            gains.append(0)
 
 print("Littles:",littlesAmt)
 print("Bigs:",bigsAmt)
+print("Gains:",gains)
