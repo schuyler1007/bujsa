@@ -34,22 +34,19 @@ def extract_data(filename, lorb):
     return member_obj
 
 
-<<<<<<< Updated upstream
-=======
+
 # Extract data for littles
 littles = extract_data('../data/Spring2025/littles.csv', 'l')[1:]
 littlesAmt = len(littles)
 # Reformat names of all little objects to be lowercase first name
 for i in littles:
     i.name = i.name.split(" ")[0].lower()
->>>>>>> Stashed changes
+
 
     
 
-<<<<<<< Updated upstream
             
 extract_data('../misc/little.csv', 'l')
-=======
 
 # Extract data for bigs
 bigs = extract_data('../data/Spring2025/bigs.csv','b')[1:]
@@ -96,4 +93,3 @@ for i in bigs:
 
 print("Littles:",littlesAmt)
 print("Bigs:",bigsAmt)
->>>>>>> Stashed changes
