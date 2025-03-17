@@ -2,13 +2,13 @@
 
 Check spring-2025 branch for updated algorithm, and translated into python: ```big_little_matching.cpp```, with ```matching``` being already compiled executable.
 
+# INSTRUCTIONS FOR USE
+
 ## Important Notes:
 
 - As of now, unmatched littles are automatically assigned to the first listed big, and vice versa, but this does not effect other results
 - Besides the above case, two people will not be matched unless they both placed each other on their forms. Because of this, make sure to verify all the results so that they seem reasonable, and match people manually as required.
 - The site is only intended for use within the JSA E-Board, if there are issues contact Theo C.
-
-# INSTRUCTIONS FOR USE
 
 Directly upload big and little preference csvs, returning a table of matches from the algorithm. No programming knowledge required, simply save preference forms from google sheets to csv. 
 
@@ -21,7 +21,7 @@ When uploading the csv, this is incredibly important. Your files ***MUST*** look
 [Littles Preferences Example](https://docs.google.com/spreadsheets/d/11uSyPQk54nS1KL4QzCcnpCK55ClWsT06MEypuzKm2cI/edit?gid=0#gid=0)
 
 
-## Usage (depreceated, use web delployed version):
+## Usage for non-web version (depreceated, follow instructions above):
 
 1. Open ```/src/match.py```
 2. Edit .csv file path for bigs and littles, using formatting given by example files found in ```/misc```
