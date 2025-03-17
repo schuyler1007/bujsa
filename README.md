@@ -8,6 +8,11 @@ Directly upload big and little preference csvs, returning a table of matches fro
 
 [Link](https://kyoudai-algo-site.vercel.app)
 
+## File Formatting
+
+When uploading the csv, this is incredibly important. Your files MUST look like they do in the examples below. 
+
+[Bigs Preferences Example](https://docs.google.com/spreadsheets/d/1GZn0-PW8SyR_jK4R9T40YpH98LRMZmgFVmsZfHau_VA/edit?gid=0#gid=0) [Littles Preferences Example](https://docs.google.com/spreadsheets/d/11uSyPQk54nS1KL4QzCcnpCK55ClWsT06MEypuzKm2cI/edit?gid=0#gid=0)
 
 
 ## Usage (depreceated, use web delployed version):
