@@ -4,9 +4,11 @@ Check spring-2025 branch for updated algorithm, and translated into python: ```b
 
 ## Web Deployment Version:
 
+Directly upload big and little preference csvs, returning a table of matches from the algorithm. No programming knowledge required, simply save preference forms from google sheets to csv. 
+
 [Link](https://kyoudai-algo-site.vercel.app)
 
-Directly upload big and little preference csvs, returning a table of matches from the algorithm
+
 
 ## Usage (depreceated, use web delployed version):
 
