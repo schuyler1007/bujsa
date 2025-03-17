@@ -6,6 +6,7 @@ Check spring-2025 branch for updated algorithm, and translated into python: ```b
 
 - As of now, unmatched littles are automatically assigned to the first listed big, and vice versa, but this does not effect other results
 - Besides the above case, two people will not be matched unless they both placed each other on their forms. Because of this, make sure to verify all the results so that they seem reasonable, and match people manually as required.
+- The site is only intended for use within the JSA E-Board, if there are issues contact Theo C.
 
 ## Web Deployment Version:
 
@@ -15,7 +16,7 @@ Directly upload big and little preference csvs, returning a table of matches fro
 
 ## File Formatting
 
-When uploading the csv, this is incredibly important. Your files MUST look like they do in the examples below. 
+When uploading the csv, this is incredibly important. Your files ***MUST*** look like they do in the examples below. 
 
 [Bigs Preferences Example](https://docs.google.com/spreadsheets/d/1GZn0-PW8SyR_jK4R9T40YpH98LRMZmgFVmsZfHau_VA/edit?gid=0#gid=0) 
 
