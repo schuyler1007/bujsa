@@ -2,6 +2,11 @@
 
 Check spring-2025 branch for updated algorithm, and translated into python: ```big_little_matching.cpp```, with ```matching``` being already compiled executable.
 
+## Important Notes:
+
+- As of now, unmatched littles are automatically assigned to the first listed big, and vice versa, but this does not effect other results
+- Besides the above case, two people will not be matched unless they both placed each other on their forms. Because of this, make sure to verify all the results so that they seem reasonable, and match people manually as required.
+
 ## Web Deployment Version:
 
 Directly upload big and little preference csvs, returning a table of matches from the algorithm. No programming knowledge required, simply save preference forms from google sheets to csv. 
@@ -12,7 +17,9 @@ Directly upload big and little preference csvs, returning a table of matches fro
 
 When uploading the csv, this is incredibly important. Your files MUST look like they do in the examples below. 
 
-[Bigs Preferences Example](https://docs.google.com/spreadsheets/d/1GZn0-PW8SyR_jK4R9T40YpH98LRMZmgFVmsZfHau_VA/edit?gid=0#gid=0) [Littles Preferences Example](https://docs.google.com/spreadsheets/d/11uSyPQk54nS1KL4QzCcnpCK55ClWsT06MEypuzKm2cI/edit?gid=0#gid=0)
+[Bigs Preferences Example](https://docs.google.com/spreadsheets/d/1GZn0-PW8SyR_jK4R9T40YpH98LRMZmgFVmsZfHau_VA/edit?gid=0#gid=0) 
+
+[Littles Preferences Example](https://docs.google.com/spreadsheets/d/11uSyPQk54nS1KL4QzCcnpCK55ClWsT06MEypuzKm2cI/edit?gid=0#gid=0)
 
 
 ## Usage (depreceated, use web delployed version):
