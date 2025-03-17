@@ -8,13 +8,11 @@ Check spring-2025 branch for updated algorithm, and translated into python: ```b
 - Besides the above case, two people will not be matched unless they both placed each other on their forms. Because of this, make sure to verify all the results so that they seem reasonable, and match people manually as required.
 - The site is only intended for use within the JSA E-Board, if there are issues contact Theo C.
 
-## Web Deployment Version:
+# INSTRUCTIONS FOR USE
 
 Directly upload big and little preference csvs, returning a table of matches from the algorithm. No programming knowledge required, simply save preference forms from google sheets to csv. 
 
-[Link](https://kyoudai-algo-site.vercel.app)
-
-## File Formatting
+[Link to website](https://kyoudai-algo-site.vercel.app)
 
 When uploading the csv, this is incredibly important. Your files ***MUST*** look like they do in the examples below. 
 
