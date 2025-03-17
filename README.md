@@ -1,8 +1,14 @@
 # bujsa kyoudai matching algorithm
 
-Check fall-2023 branch for updated algorithm: ```big_little_matching.cpp```, with ```matching``` being already compiled executable.
+Check spring-2025 branch for updated algorithm, and translated into python: ```big_little_matching.cpp```, with ```matching``` being already compiled executable.
 
-## Usage:
+## Web Deployment Version:
+
+[Link](https://kyoudai-algo-site.vercel.app)
+
+Directly upload big and little preference csvs, returning a table of matches from the algorithm
+
+## Usage (depreceated, use web delployed version):
 
 1. Open ```/src/match.py```
 2. Edit .csv file path for bigs and littles, using formatting given by example files found in ```/misc```
@@ -25,7 +31,5 @@ Check fall-2023 branch for updated algorithm: ```big_little_matching.cpp```, wit
 ## Future plans:
 
 - Checking for unmatched littles and sending a seperate list
-- Automated pipeline from python script to C program
-- Integration into web tool so no programming knowledge is necessary to use
 
 
